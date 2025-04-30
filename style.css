@@ -7,7 +7,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 80%;
 }
 ul {
   list-style: none;
@@ -18,7 +18,10 @@ body {
   color: #222;
   display: grid;
 }
-
+p {
+  font-size: 1.2rem;
+  padding: 0.2rem;
+}
 .menu {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -43,8 +46,120 @@ body {
 
 .titulo {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 5rem;
+  font-size: 6rem;
   text-transform: uppercase;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.5rem;
   color: rgb(68, 42, 1);
+  text-align: center;
+}
+.descricao-blog {
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  padding: 16%;
+}
+aside {
+  width: 60%;
+  padding-left: 0.2rem;
+  margin-left: 0.2rem;
+  /* float: left; */
+  font-style: italic;
+  background-color: #fb5;
+  color: rgb(68, 42, 1);
+  text-align: center;
+  border-radius: 1rem;
+}
+.animais-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.texto-animais {
+  flex: 1;
+}
+.titulo-2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: rgb(68, 42, 1);
+  text-align: center;
+}
+.animais-info img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.faq {
+  background-color: #fb5;
+  padding: 3rem;
+}
+.faq-lista dt {
+  font-family: monospace;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: rgb(68, 42, 1);
+  font-size: 1.4rem;
+}
+.faq-lista dd {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+.contato {
+  text-align: center;
+  padding: 2rem;
+}
+
+.conteudo-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* importante para evitar estouro em telas menores */
+}
+
+.dados {
+  text-align: right;
+  max-width: 30%;
+}
+
+.dados ul {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.img-contato img {
+  margin-top: 2rem;
+  max-width: 20rem;
+  width: 100%;
+  height: auto;
+}
+.footer {
+  background-color: #fb5;
+  text-align: left;
+  align-items: flex-end;
+}
+.footer p {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(68, 42, 1);
+  font-weight: 500;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(68, 42, 1);
+}
+.footer a:hover {
+  font-weight: bold;
 }
