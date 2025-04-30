@@ -1,3 +1,7 @@
+html {
+  margin: 0;
+  padding: 0%;
+}
 body {
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
@@ -162,4 +166,94 @@ aside {
 }
 .footer a:hover {
   font-weight: bold;
+}
+
+/*  responsividade */
+@media (max-width: 767px) {
+  html {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  body {
+    padding: 0;
+  }
+  .titulo {
+    font-size: 3rem;
+  }
+  .descricao-blog {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .titulo-2 {
+    font-size: 2rem;
+  }
+  .animais-info {
+    font-size: 1rem;
+    /* padding: 1rem; */
+    display: block;
+  }
+  .animais-info img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  aside {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  .faq {
+    font-size: 1rem;
+  }
+  .faq-lista dd {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .dados {
+    max-width: 100%;
+    text-align: center;
+  }
+  .img-contato {
+    width: 20%;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .titulo {
+    font-size: 4rem;
+  }
+  .descricao-blog {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  .animais-info {
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .animais-info {
+    width: 100%;
+  }
+  .animais-info img {
+    width: 100%;
+  }
+  aside {
+    width: 90%;
+    justify-content: center;
+  }
+  .conteudo-contato {
+    flex-direction: column;
+    /* remover a imagem */
+  }
+  .img-contato {
+    max-width: 15%;
+  }
+  .dados {
+    text-align: center;
+    max-width: 70%;
+  }
+  .footer p {
+    text-align: center;
+  }
 }
